@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign up Form </h1>
+
+    <form action="/signup" method="post" onsubmit="return validateSignUpForm()">
+        First Name:
+      <input type="text" name="firstName" placeholder="First Name" required><br />
+        Last Name
+      <input type="text" name="lastName" placeholder="Last Name" required><br />
+      Email:
+      <input type="email" name="email" placeholder="Email" required><br />
+      Password:
+      <input type="password" name="password" placeholder="Password" required><br />
+      confirm Password:
+      <input type="password" name="confirmPassword" placeholder="Confirm Password" required><br />
+      Number:
+      <input type="number" name="age" placeholder="Age" required><br />
+      Age:
+      <select name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select><br />
+      <input type="checkbox" name="termsAndConditions" required> I agree to the terms and conditions.<br />
+      <button type="submit">Sign Up</button>
+    </form>
+    
+
+
+
+<H1>Sign In Form</H1>
+    
+    <form action="/login" method="post" onsubmit="return validateSignInForm()">
+        Email :
+      <input type="email" name="email" placeholder="Email" required><br />
+      password:
+      <input type="password" name="password" placeholder="Password" required><br />
+      <button type="submit">Sign In</button>
+    </form>
+    
+</body>
+</html>
+
+
+
