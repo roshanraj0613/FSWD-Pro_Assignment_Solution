@@ -2,16 +2,22 @@ HTML5 is the latest version of the HyperText Markup Language, the standard marku
 
 HTML5 includes a number of new features and improvements over previous versions of HTML, such as:
 
-* **Semantic elements:** HTML5 introduces new semantic elements, such as `<header>`, `<footer>`, `<section>`, and `<article>`. These elements help to make web pages more meaningful to both users and search engines.
-* **Multimedia support:** HTML5 includes native support for audio and video playback, without the need for third-party plugins such as Adobe Flash.
-* **Canvas element:** The canvas element allows developers to create dynamic graphics and animations using JavaScript.
-* **Geolocation API:** The geolocation API allows developers to access the user's current location, with the user's permission.
-* **Local storage:** Local storage allows developers to store data on the user's computer, even when the user is offline.
-* **Web workers:** Web workers allow developers to run scripts in the background, without blocking the main thread of the web page.
-* **Drag and drop API:** The drag and drop API allows developers to create elements that can be dragged and dropped by users.
-* **Form enhancements:** HTML5 introduces a number of new form controls, such as the `<input type="email">` and `<input type="date">` controls.
-* **Web sockets:** Web sockets allow developers to create real-time bidirectional communication between a web page and a server.
+* Semantic elements: HTML5 introduces new semantic elements, such as `<header>`, `<footer>`, `<section>`, and `<article>`. These elements help to make web pages more meaningful to both users and search engines.
 
-In addition to these features, HTML5 also includes a number of other improvements, such as better support for responsive design and improved accessibility.
+* Multimedia support: HTML5 includes native support for audio and video playback, without the need for third-party plugins such as Adobe Flash.
+
+* Canvas element: The canvas element allows developers to create dynamic graphics and animations using JavaScript.
+
+* Geolocation API: The geolocation API allows developers to access the user's current location, with the user's permission.
+
+* Local storage: Local storage allows developers to store data on the user's computer, even when the user is offline.
+
+* Web workers: Web workers allow developers to run scripts in the background, without blocking the main thread of the web page.
+
+* Drag and drop API: The drag and drop API allows developers to create elements that can be dragged and dropped by users.
+
+* Form enhancements: HTML5 introduces a number of new form controls, such as the `<input type="email">` and `<input type="date">` controls.
+
+* Web sockets: Web sockets allow developers to create real-time bidirectional communication between a web page and a server.
 
 HTML5 is a powerful and versatile markup language that allows developers to create rich and interactive web experiences. It is the standard markup language for the modern web.
