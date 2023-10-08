@@ -1,0 +1,54 @@
+In CSS, the z-index property is used to control the vertical stacking order of elements on a web page. Elements with a higher z-index value will appear on top of elements with a lower z-index value.
+
+example:-
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Z-Index Example</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+
+      .box-1 {
+        background-color: red;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+      }
+
+      .box-2 {
+        background-color: blue;
+        top: 75px;
+        left: 75px;
+        z-index: 2;
+      }
+
+      .box-3 {
+        background-color: green;
+        top: 100px;
+        left: 100px;
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+  </body>
+</html>
+
+
+
+In this code, I have created three boxes using the .box class. We have set the width and height to 100px and the position property to absolute to allow us to position the boxes precisely.
+
+I have then used CSS to position each box and set its z-index value:
+
+Box 1 is positioned at 50px from the top and left of the viewport and has a z-index of 1.
+Box 2 is positioned at 75px from the top and left of the viewport and has a z-index of 2.
+Box 3 is positioned at 100px from the top and left of the viewport and has a z-index of 3.
+With this code, Box 3 will appear on top of Box 2 and Box 1 because it has the highest z-index value. Box 2 will appear on top of Box 1 because it has a higher z-index value. You can adjust the z-index values to change the stacking order of the boxes.

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            position: absolute;
+        }
+        
+        .a {
+            position: Center;
+            top: 200px;
+            left: 200px;
+            top: 50vh;
+            left: 50vw;
+            text-align: center;
+        }
+        
+        
+        .b {
+            top: calc(50% - 30px);
+            left: calc(50% - 30px);
+            text-align: center;
+        }
+        
+        .c {
+            top: calc(50% - 30px);
+            left: calc(50% + 30px);
+            text-align: center;
+        }
+        
+        .d {
+            top: calc(50% + 30px);
+            left: calc(50% - 30px);
+            text-align: center;
+        }
+        
+        .e {
+            top: calc(50% + 30px);
+            left: calc(50% + 30px);
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box a">A</div>
+    <div class="box b">B</div>
+    <div class="box c">C</div>
+    <div class="box d">D</div>
+    <div class="box e">E</div>
+</body>
+</html>
