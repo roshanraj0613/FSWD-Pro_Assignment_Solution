@@ -1,0 +1,11 @@
+Explanation of the key properties in the Flexbox layout mode:
+
+justify-content: This property is used to align items along the main axis of the flex container. It controls the distribution of space between and around items in the container. The possible values are flex-start, flex-end, center, space-between, space-around, and space-evenly.
+
+align-items: This property is used to align items along the cross axis of the flex container. It controls the alignment of items within the container. The possible values are flex-start, flex-end, center, baseline, and stretch.
+
+gap: This property is used to set the gap between items in a flex container. It is a shorthand property for row-gap and column-gap in Grid layout.
+
+flex-direction: This property is used to set the direction of the main axis of the flex container. It controls the direction in which items are laid out within the container. The possible values are row, row-reverse, column, and column-reverse.
+
+flex-wrap: This property is used to control whether items in a flex container should wrap or not when there is not enough space on a single line. The possible values are nowrap, wrap, and wrap-reverse.
