@@ -1,0 +1,35 @@
+grid-auto-row is a property that is used to set the size of rows that are created implicitly in a grid container. Implicit rows are rows that are created automatically when grid items are placed outside of the explicitly defined grid rows. The grid-auto-row property can be used to set the height of these implicit rows.
+
+
+code example: .html
+
+<div class="grid-container">
+  <div class="grid-item">Item 1</div>
+  <div class="grid-item">Item 2</div>
+  <div class="grid-item">Item 3</div>
+  <div class="grid-item">Item 4</div>
+  <div class="grid-item">Item 5</div>
+  <div class="grid-item">Item 6</div>
+</div>
+
+
+.css 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: yellow;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+In this code, we have created a grid container with three columns using grid-template-columns. We have then used grid-auto-rows to set the height of the implicit rows to 100px. This means that any grid items that are placed outside of the explicitly defined rows will be placed in rows that are 100px tall.
+
+We have also added some styles to the grid items using the .grid-item class. This includes a yellow background color, a black border, and some padding.
+

@@ -1,0 +1,19 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.single-item {
+    background-color: green;
+    border: 1px solid black;
+    padding: 10px;
+    justify-self: center;
+}

@@ -1,0 +1,39 @@
+justify-items is a property that is used to align grid items along the horizontal axis within a grid cell. It applies to all grid items within a grid container. The possible values are start, end, center, stretch, and baseline.
+
+Here's an example of how to use justify-items:
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.grid-item {
+  background-color: yellow;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+In this code, I have created a grid container with three columns using grid-template-columns. I have then used justify-items to center the grid items within each cell. This means that all grid items within the container will be centered horizontally within their respective cells.
+
+justify-self is a property that is used to align a single grid item along the horizontal axis within a grid cell. It applies only to the specified grid item. The possible values are start, end, center, stretch, and baseline.
+
+
+Here's an example of how to use justify-self:
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item {
+  background-color: yellow;
+  border: 1px solid black;
+  padding: 10px;
+  justify-self: center;
+}
+
+
+In this code, I have created a grid container with three columns using grid-template-columns. I have then used justify-self to center a single grid item within its cell. This means that only the specified grid item will be centered horizontally within its cell.
+
