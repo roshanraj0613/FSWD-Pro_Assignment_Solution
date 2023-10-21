@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+    <style>
+        .image-gallery 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-gallery img {
+            width: 30%;
+            margin: 10px;
+        }
+        @media screen and (max-width: 800px) {
+            .image-gallery img 
+            {
+            width: 45%;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .image-gallery img 
+            {
+            width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <img src="https://fastly.picsum.photos/id/78/200/300.jpg?hmac=a_FLwjYkKWOwogL6dU4s_8tA9Hnksxza1EfaGke9X5Q" alt="Image 1" />
+        <img src="https://fastly.picsum.photos/id/78/200/300.jpg?hmac=a_FLwjYkKWOwogL6dU4s_8tA9Hnksxza1EfaGke9X5Q" alt="Image 2" />
+        <img src="https://fastly.picsum.photos/id/78/200/300.jpg?hmac=a_FLwjYkKWOwogL6dU4s_8tA9Hnksxza1EfaGke9X5Q" alt="Image 3" />
+    </div>
+</body>
+</html>
