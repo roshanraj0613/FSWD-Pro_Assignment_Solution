@@ -1,0 +1,42 @@
+/* target the anchor tag a change the color */
+nav a {
+    color: green;
+}
+/* target the first h2 tag and change the text and background */
+nav >h2 {
+    color:red;
+    background-color: snow;
+}
+/* target the first p tag and change the text to red */
+ul + p {
+    color: red;
+}
+/* target the anchor tag with attribute "href" and change color to red and remove the text underline */
+a[href] {
+    color: red;
+    text-decoration: none;
+}
+/* Target the anchor tag with the attribute of class name "active", change the text color , and provide the text style properties with underlining*/
+a[class="active"] {
+    color: blue;
+    text-decoration: underline;
+}
+
+a[target="_self"] {
+    background-color: grey;
+}
+
+
+p:last-child::after {
+    content: "...";
+}
+
+
+li::marker {
+    color: green;
+}
+
+p:nth-child(even)::first-letter {
+    color: red;
+    font-size: 30px;
+}

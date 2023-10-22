@@ -1,0 +1,27 @@
+.my-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.my-button2 {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: auto;
+}
+
+.my-button:hover {
+    background-color: red;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+    cursor: pointer;
+}
