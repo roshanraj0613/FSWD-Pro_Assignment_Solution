@@ -1,4 +1,6 @@
-justify-items is a property that is used to align grid items along the horizontal axis within a grid cell. It applies to all grid items within a grid container. The possible values are start, end, center, stretch, and baseline.
+Question:- Explain the difference between justify-items and justify-self using code examples.
+
+Answer:-justify-items is a property that is used to align grid items along the horizontal axis within a grid cell. It applies to all grid items within a grid container. The possible values are start, end, center, stretch, and baseline.
 
 Here's an example of how to use justify-items:
 
