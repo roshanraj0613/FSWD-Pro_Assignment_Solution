@@ -1,0 +1,18 @@
+Question 3: List and describe the five primitive data types in JavaScript.
+
+Ans:-
+
+1. Number: Represents numeric values. For example, 123, 120.50 etc.
+let num = 25; // Number
+
+2. String: Represents a sequence of characters. For example, "Hello, World!".
+let str = "Hello, World!"; // String
+
+3. Boolean: Represents logical values and can be either true or false.
+let isAvailable = true; // Boolean
+
+4. Undefined: Represents a variable that has not been assigned a value.
+let noValue; // Undefined
+
+5. Null: Represents a special keyword denoting a null value. It means no value or no object. It implies the absence of value.
+let emptyValue = null; // Null

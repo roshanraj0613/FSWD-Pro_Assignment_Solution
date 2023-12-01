@@ -1,0 +1,30 @@
+Question 2: Explain the key differences between JavaScript and HTML. Provide examples of situations where you would use each.
+
+Ans:-
+
+HTML (HyperText Markup Language) and JavaScript are both essential to web development, but they serve different purposes.
+
+1. HTML: HTML is a markup language used for structuring content on the web. It defines the structure of web content and has elements like headings, paragraphs, divs, spans, links, forms, etc. HTML is not a programming language; it doesn't have logic, it can't perform calculations or manipulate data.
+
+Example Use: You would use HTML to create the structure of a webpage, such as headers, body text, links, images, forms, etc.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Page</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a paragraph.</p>
+    <a href="https://www.example.com">This is a link</a>
+</body>
+</html>
+
+2. JavaScript: JavaScript is a high-level, interpreted programming language that adds interactivity to websites. It can update and change both HTML and CSS, calculate, manipulate and validate data.
+
+Example Use: You would use JavaScript to make your website interactive, such as creating a dropdown menu, changing the website content based on user actions, validating form inputs, fetching data from a server, etc.
+
+document.getElementById("demo").innerHTML = "Hello, World!";
+
+
+

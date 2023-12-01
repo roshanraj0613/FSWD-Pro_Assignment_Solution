@@ -1,0 +1,106 @@
+Describe the categorization of operators in JavaScript based on their functionality. Provide examples for
+each category.
+
+Ans:- Operators in JavaScript can be categorized based on their functionality into the following types:
+
+1. Arithmetic Operators: These are used to perform mathematical operations. Examples include + (addition), - (subtraction), * (multiplication), / (division), and % (modulus).
+
+let a = 10, b = 20;
+console.log(a + b); // 30
+console.log(a - b); // -10
+console.log(a * b); // 200
+console.log(a / b); // 0.5
+console.log(a % b); // 10
+
+2. Assignment Operators: These are used to assign values to variables. Examples include = (assignment), += (add and assign), -=, *=, /=, and %=.
+
+let a = 10, b = 20;
+console.log(a == b); // false
+console.log(a != b); // true
+console.log(a === b); // false
+console.log(a !== b); // true
+console.log(a < b); // true
+console.log(a > b); // false
+console.log(a <= b); // true
+console.log(a >= b); // false
+
+3. Logical Operators: These are used to determine the logic between variables or values. Examples include && (and), || (or), and ! (not).
+
+let a = true, b = false;
+console.log(a && b); // false
+console.log(a || b); // true
+console.log(!a); // false
+
+4. Bitwise Operators: These are used to work on 32-bit binary numbers. Examples include & (and), | (or), ^ (xor), ~ (not), << (left shift), >> (right shift), and >>> (zero fill right shift).
+
+let a = 5; // binary: 0101
+let b = 3; // binary: 0011
+console.log(a & b); // 1 (binary: 0001)
+console.log(a | b); // 7 (binary: 0111)
+console.log(a ^ b); // 6 (binary: 0110)
+console.log(~a); // -6 (binary: 1010)
+console.log(a << 1); // 10 (binary: 1010)
+console.log(a >> 1); // 2 (binary: 0010)
+console.log(a >>> 1); // 2 (binary: 0010)
+
+5. Comparison Operators: These operators are used in logical statements to determine equality or difference between variables or values. Example: ==, ===, !=, !==, >, <, >=, <=
+
+let a = 10, b = 5;
+console.log(a == b); // false
+console.log(a != b); // true
+console.log(a === b); // false
+console.log(a !== b); // true
+console.log(a > b); // true
+console.log(a < b); // false
+console.log(a >= b); // true
+console.log(a <= b); // false
+
+6. Ternary Operator (Conditional Operator): This operator consists of three operands and is used to evaluate Boolean expressions. Example: ? :
+
+let a = 10, b = 5;
+let result = (a > b) ? 'a is greater than b' : 'a is not greater than b';
+console.log(result); // 'a is greater than b'
+
+7. String Operators: In JavaScript, we can use the + operator to concatenate strings.
+
+let text1 = "Hello";
+let text2 = "World";
+let text3 = text1 + " " + text2;
+console.log(text3); // Outputs: "Hello World"
+
+8. Relational Operators: These operators are used to compare its operands and return a Boolean value based on whether the comparison is true. Example: in, instanceof
+
+let cars = ["Saab", "Volvo", "BMW"];
+console.log("0" in cars);  // Outputs: true
+
+let date = new Date();
+console.log(date instanceof Date);  // Outputs: true
+
+9. Logical Operators: Logical operators are used to determine the logic between variables or values. Example: && (logical and), || (logical or), ! (logical not)
+
+let a = 5, b = 10;
+console.log(a < 10 && b > 1); // Outputs: true
+console.log(a === 5 || b === 5); // Outputs: true
+console.log(!(a === b)); // Outputs: true
+
+10. Unary Operators: Unary operators take only one value for its operation. Example: delete, typeof, void
+
+let x = {property1: 5};
+delete x.property1; // x now does not have property1
+console.log(typeof x); // Outputs: "object"
+console.log(void x); // Outputs: undefined
+
+11. Binary Operators: Binary operators take two values for its operation. Example: +, -, *, /, %, **
+
+let a = 5, b = 10;
+console.log(a + b); // Outputs: 15
+console.log(a - b); // Outputs: -5
+console.log(a * b); // Outputs: 50
+console.log(a / b); // Outputs: 0.5
+console.log(a % b); // Outputs: 5
+console.log(a ** b); // Outputs: 9765625
+
+
+
+
+
