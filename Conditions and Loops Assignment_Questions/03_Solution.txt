@@ -1,0 +1,41 @@
+What are loops, and what do we need them? Explain different types of loops with their syntax and examples.
+
+Ans:- Loops are a fundamental concept in programming that allow a block of code to be repeated a certain number of times or until a certain condition is met. They are used when you need to run the same code repeatedly, often with a different value each time.
+
+There are several types of loops in JavaScript:
+
+1. For Loop: A for loop repeats until a specified condition evaluates to false.
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+2. While Loop: A while loop executes its statements as long as a specified condition evaluates to true.
+
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+3. Do-While Loop: The do...while loop is similar to the while loop except that the condition is tested after the execution of the statements within the loop. Therefore, the loop will always be executed at least once.
+
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+
+4. For-In Loop: The for...in loop is used to loop through the properties of an object.
+
+let obj = {a: 1, b: 2, c: 3};
+for (let prop in obj) {
+  console.log(`obj.${prop} = ${obj[prop]}`);
+}
+
+5. For-Of Loop: The for...of loop is used to loop over iterable objects like arrays, strings, etc.
+
+let arr = [1, 2, 3, 4, 5];
+for (let value of arr) {
+  console.log(value);
+}
