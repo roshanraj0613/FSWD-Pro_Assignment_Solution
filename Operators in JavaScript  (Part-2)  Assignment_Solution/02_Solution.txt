@@ -1,0 +1,14 @@
+Describe the usage of the comma operator in JavaScript and provide an example.
+
+Ans:-
+
+The comma operator in JavaScript evaluates each of its operands (from left to right) and returns the value of the last operand. This can be useful when you want to include multiple expressions in a location that requires a single expression.
+
+Here's an example:
+
+let a = 5, b = 10, c = 20;
+a = (b = b * 2, c = c * 2, b + c);
+
+console.log(a); 
+
+// Outputs: 60
