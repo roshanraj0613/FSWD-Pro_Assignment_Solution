@@ -1,0 +1,22 @@
+Explain the Git Workflow, including the staging area, working directory, and repository
+
+Ans:-
+
+Git workflow involves the following stages:
+
+1. Working Directory: This is your local directory where you make changes to your files. When you modify a file, Git recognizes that a file has changed in the working directory.
+
+2. Staging Area (Index): After you've made some changes and want to prepare them for a commit, you add the files to the staging area. This is done with the git add command. The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit.
+
+3. Repository (Commit): When you're ready to save the changes you've staged, you commit them to the repository with the git commit command. This takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+
+Here's a basic example of this workflow:
+
+# Edit files in your working directory
+# ...
+
+# Stage the files, adding snapshots of them to your staging area
+git add file1 file2
+
+# Commit the snapshot to your repository
+git commit -m "Add file1 and file2"

@@ -1,0 +1,20 @@
+Explain what version control is and its importance in software development
+
+Ans:-
+
+Version control, also known as source control, is a system that records changes to a file or set of files over time so that you can recall specific versions later. It allows you to track modifications, revert to previous versions, and create branches for parallel development.
+
+In software development, version control is crucial for several reasons:
+
+1. Collaboration: It allows multiple developers to work on the same project without overwriting each other's changes.
+
+2. History Tracking: It keeps a detailed history of all changes, who made them, and why. This is useful for understanding how your project evolved between versions.
+
+3. Backup: Every check-in serves as a backup. If you lose your local files, you can always retrieve them from the version control system.
+
+4. Branching and Merging: Developers can create branches to work on new features or bug fixes without affecting the main codebase. Once the work is complete and tested, it can be merged back into the main codebase.
+
+5. Reverting Changes: If a change introduces a bug, it's easy to revert back to a previous working version.
+
+Popular version control systems include Git, Mercurial, Subversion, and Perforce.
+
