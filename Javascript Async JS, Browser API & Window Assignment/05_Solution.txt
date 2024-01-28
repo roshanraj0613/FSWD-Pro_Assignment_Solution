@@ -1,0 +1,21 @@
+Here are some common Browser APIs available to JavaScript developers:
+
+1. Document Object Model (DOM) API: Allows JavaScript to manipulate HTML and CSS, creating, modifying, or deleting HTML elements and attributes.
+
+2. Fetch API: Provides a global fetch() method used for making HTTP requests. This is a modern, promise-based alternative to the older XMLHttpRequest.
+
+3. Geolocation API: Allows the user to provide their location to web applications if they so desire.
+
+4. Web Storage API: Includes localStorage and sessionStorage, which allow you to store data on the user's browser that persists even after the browser is closed.
+
+5. Canvas API: Used for drawing graphics on the web page via JavaScript, for things like games or other visual updates.
+
+6. Web Audio API: Allows developers to incorporate audio into their web pages, create audio visualizations, apply audio effects, etc.
+
+7. Notifications API: Used to configure and display desktop notifications to the user.
+
+8. File API: Provides means to read the contents of files (or raw data buffers), and to create and navigate file system directories.
+
+9. WebSockets API: Enables real-time communication between a client and a server, allowing both parties to send data at any time.
+
+10. Service Workers API: Acts as a proxy server that sits between web applications, the browser, and the network (when available). They are designed to enable the creation of effective offline experiences, intercept network requests and take appropriate action based on whether the network is available, and update assets residing on the server. They also allow access to push notifications and background sync APIs.

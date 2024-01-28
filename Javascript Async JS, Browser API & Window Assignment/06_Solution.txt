@@ -1,0 +1,34 @@
+The localStorage and sessionStorage APIs are part of the Web Storage API and provide a way for web applications to store data in a user's web browser.
+
+localStorage:
+
+localStorage provides a way to store data across browser sessions. Once data is stored in localStorage, it stays there until explicitly removed. It's useful for storing data that needs to persist across browser restarts and power cycles.
+
+Example:
+// Store data
+localStorage.setItem('name', 'John Doe');
+
+// Retrieve data
+let name = localStorage.getItem('name');
+console.log(name); // Outputs: "John Doe"
+
+// Remove data
+localStorage.removeItem('name');
+
+sessionStorage:
+
+sessionStorage is similar to localStorage, but it's scoped to the browser session. This means that the data stored in sessionStorage gets cleared when the page session ends — that is, when the page is closed.
+
+Example:
+// Store data
+sessionStorage.setItem('name', 'John Doe');
+
+// Retrieve data
+let name = sessionStorage.getItem('name');
+console.log(name); // Outputs: "John Doe"
+
+// Remove data
+sessionStorage.removeItem('name');
+
+
+Both localStorage and sessionStorage are useful for persisting non-sensitive data across page refreshes, and they can both store up to 5MB of data. The data is stored as strings, so if you want to store objects, you need to convert them to strings using JSON.stringify() before storing, and convert them back to objects using JSON.parse() after retrieving.
