@@ -1,0 +1,34 @@
+The XMLHttpRequest object is a built-in browser object that allows to make HTTP requests to servers from web pages. It's used to exchange data between a web browser and a server, and it's a key part of AJAX (Asynchronous JavaScript and XML).
+
+
+Here's a basic usage of XMLHttpRequest in AJAX:
+
+// Create a new XMLHttpRequest object
+var xhr = new XMLHttpRequest();
+
+// Configure it: GET-request for the URL /api/data
+xhr.open('GET', '/api/data', true);
+
+// Send the request over the network
+xhr.send();
+
+// This will be called after the response is received
+xhr.onload = function() {
+  if (xhr.status != 200) { // analyze HTTP response status
+    alert(`Error ${xhr.status}: ${xhr.statusText}`); // e.g. 404: Not Found
+  } else { // show the result
+    alert(`Done, got ${xhr.response.length} bytes`); // response is the server response
+  }
+};
+
+xhr.onprogress = function(event) {
+  if (event.lengthComputable) {
+    alert(`Received ${event.loaded} of ${event.total} bytes`);
+  } else {
+    alert(`Received ${event.loaded} bytes`); // no Content-Length
+  }
+};
+
+xhr.onerror = function() {
+  alert("Request failed");
+};

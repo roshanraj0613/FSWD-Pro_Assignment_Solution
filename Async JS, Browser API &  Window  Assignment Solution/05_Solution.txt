@@ -1,0 +1,19 @@
+1. Document Object Model (DOM) API: Allows JavaScript to manipulate the structure, style, and content of a webpage. You can add, change, and remove HTML elements, attributes, and CSS styles.
+
+2. Fetch API: Provides a global fetch() method used for making HTTP requests. It's a more powerful and flexible feature than the older XMLHttpRequest.
+
+3. Geolocation API: Allows the user to provide their location to web applications if they so desire. This can be used for things like location-based services or showing a location on a map.
+
+4. Web Storage API (localStorage and sessionStorage): Provides mechanisms by which browsers can store key/value pairs, much larger amounts than cookies, and on the client side.
+
+5. Canvas API: Used to draw graphics via JavaScript and the HTML <canvas> element. It can be used for animations, game graphics, data visualization, photo manipulation, and real-time video processing.
+
+6. Web Audio API: Allows developers to incorporate audio into their web pages, create audio visualizations, apply audio effects, and more.
+
+7. WebRTC (Web Real-Time Communications) API: Enables real-time communication of audio, video and data in web and native apps. It's used for video chat applications without needing plugins or third-party software.
+
+8. Notifications API: Used to configure and display desktop notifications to the user. These can be used to inform the user about important updates or events while they're doing something else.
+
+9. File API: Provides means to read the contents of files (or raw data buffers), and to create and navigate file systems.
+
+10. History API: Provides access to the browser's session history. This can be used to change the current URL without reloading the page or add an entry to the history stack.

@@ -1,0 +1,40 @@
+The same-origin policy is a security measure implemented in web browsers to prevent interactions between resources from different origins. In the context of AJAX requests, it means that a web page's scripts can only make AJAX requests to the same domain that the web page came from, not to any other domain.
+
+There are several ways to work around the same-origin policy:
+
+1. CORS (Cross-Origin Resource Sharing): This is a standard that allows servers to specify who can access their resources and how. If the server includes the appropriate CORS headers (Access-Control-Allow-Origin, etc.) in its responses, the browser will allow the AJAX request to the different domain.
+
+// Server-side (Express.js example)
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // allow requests from any other server
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE'); // allow these verbs
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Cache-Control");
+  next();
+});
+
+
+2. JSONP (JSON with Padding): This is a method for sending JSON data without worrying about cross-domain issues. JSONP does not use XMLHttpRequest, and as a result, does not obey the same-origin policy. Instead, it uses the <script> tag to get JSON data loaded into a page.
+
+// Client-side
+function handleResponse(response) {
+  console.log(response.data);
+}
+
+var script = document.createElement('script');
+script.src = `https://example.com?callback=handleResponse`;
+document.body.append(script);
+
+
+3. Proxy Server: You can set up a server-side script on the same domain as your page, which will relay the AJAX request to the other domain. This way, the request is still technically being made to the same domain as far as the browser is concerned.
+
+// Server-side (Node.js with Express and request modules)
+var request = require('request');
+var express = require('express');
+var app = express();
+
+app.use('/proxy', function(req, res) {
+  var url = 'https://example.com' + req.url;
+  req.pipe(request(url)).pipe(res);
+});
+
+app.listen(3000);

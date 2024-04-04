@@ -1,0 +1,38 @@
+The localStorage and sessionStorage APIs are part of the Web Storage API and provide a way for web applications to store data in a user's web browser.
+
+localStorage: Data stored using the localStorage API is saved across browser sessions. This means that even if the user closes their browser or reboots their computer, the data will still be available when they reopen the browser. This makes localStorage suitable for long-term storage of data that needs to persist across multiple sessions.
+
+Example usage of localStorage:
+
+// Store data
+localStorage.setItem('name', 'John Doe');
+
+// Retrieve data
+var name = localStorage.getItem('name');
+console.log(name); // Outputs: "John Doe"
+
+// Remove data
+localStorage.removeItem('name');
+
+// Clear all data
+localStorage.clear();
+
+sessionStorage: Unlike localStorage, data stored using the sessionStorage API is only available for the duration of the page session. A page session lasts as long as the browser is open, and survives over page reloads and restores. However, opening a page in a new tab or window will cause a new session to be initiated, and data stored in sessionStorage from one tab or window is not available in another. This makes sessionStorage suitable for storing data that needs to be kept isolated to a single session.
+
+Example usage of sessionStorage:
+
+// Store data
+sessionStorage.setItem('pageVisitCount', '3');
+
+// Retrieve data
+var count = sessionStorage.getItem('pageVisitCount');
+console.log(count); // Outputs: "3"
+
+// Remove data
+sessionStorage.removeItem('pageVisitCount');
+
+// Clear all data
+sessionStorage.clear();
+
+
+Both localStorage and sessionStorage are limited to storing string values. If you want to store more complex data types, like objects or arrays, you'll need to serialize them with JSON.stringify() before storing, and then deserialize with JSON.parse() when retrieving.

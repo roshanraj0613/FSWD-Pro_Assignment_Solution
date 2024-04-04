@@ -1,0 +1,58 @@
+Callbacks are functions that are passed as arguments to other functions and are executed after the parent function has completed. They are a way to manage asynchronous operations in JavaScript, but they can lead to issues:
+
+1. Callback Hell: When callbacks are nested within callbacks, it can lead to deeply nested code that is hard to read and maintain. This is often referred to as "callback hell".
+
+2. Error Handling: In callbacks, error handling needs to be done in each individual callback, which can lead to repetitive code and can make it easy to forget to handle errors.
+
+3. Sequential Execution: Running multiple asynchronous operations in sequence can be tricky with callbacks.
+
+Promises are objects that represent the eventual completion or failure of an asynchronous operation. They are preferred for managing asynchronous code for several reasons:
+
+1. Chaining: Promises allow you to chain operations together, meaning you can run asynchronous operations in sequence more easily.
+
+2. Error Handling: Promises have built-in error handling. You can attach a .catch handler to a promise chain and it will handle any errors that occur in any of the promises in the chain.
+
+3. Parallel Execution: The Promise.all function allows you to run multiple asynchronous operations in parallel and wait for all of them to complete.
+
+4. Readability: Promises can make the code more readable and easier to understand, especially when compared to nested callbacks.
+
+
+Here's a comparison of using callbacks and promises:
+
+// Callbacks
+function getData(callback) {
+  asyncOperation(function(err, data) {
+    if (err) {
+      callback(err);
+    } else {
+      callback(null, data);
+    }
+  });
+}
+
+getData(function(err, data) {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log(data);
+  }
+});
+
+// Promises
+function getData() {
+  return new Promise(function(resolve, reject) {
+    asyncOperation(function(err, data) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(data);
+      }
+    });
+  });
+}
+
+getData().then(function(data) {
+  console.log(data);
+}).catch(function(err) {
+  console.error(err);
+});
